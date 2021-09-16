@@ -1,0 +1,12 @@
+t=[7,5,9,10,8,8,7,9,9,6,5,10,6,5,7,8,7,6,6,7,8,8,7,6]
+s=0
+for i in range(0,len(t)):
+    s=s+t[i]
+
+l=[p for p, r in enumerate(t) if r==max(t)]
+k=[o for o, w in enumerate(t) if w==min(t)]
+print("temperatura medie este",s/24)
+print("maximul temperaturii este",max(t))
+print("minimul temperaturii este",min(t))
+print("orele la care s-au inregistrat temperaturi maxime ",l)
+print("orele la care s-au inregistrat temperaturi minime ",k)

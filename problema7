@@ -1,0 +1,14 @@
+v=[3000,9000,4000,100,1600,3000,2000]
+zi=["luni","marti","miercuri","joi","vineri","sambata","duminica"]
+ven=0
+for i in range(0,len(v)):
+    ven=ven+v[i]
+
+b=v.count(max(v))
+c=zi[b]
+print("venitul saptamanal este",ven)
+print("venitul mediu zilnic este",ven//7)
+print("ziua cu cel mai mare venit este",c)
+l=v.index(min(v))
+p=zi[l]
+print("ziua cu cel mai mic venit este",p)
